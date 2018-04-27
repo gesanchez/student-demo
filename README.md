@@ -1,27 +1,40 @@
-# StudentDemo
+# Student-Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+Proyecto demo para realizar un registro de estudiantes haciendo uso del framework Angular
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Login
+Se debe desarrollar un login que luzca lo mas parecido al mostrado en la imagen siguiente:
 
-## Code scaffolding
+![](/src/assets/images/login.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Registro
+Se debe desarrollar un regstro que luzca lo mas parecido al mostrado en la imagen siguiente:
 
-## Build
+![](/src/assets/images/signup.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Instalar dependencias
 
-## Running unit tests
+Antes de comenzar el desarrollo sobre el proyecto es necesario realizar la descarga de las dependencias necesarias para su ejecucion, para esto ejecutaremos el siguiente comando sobre la raiz del proyecto:
+```sh
+$ npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Modo Desarrollo
 
-## Running end-to-end tests
+Para ejecutar el proyecto en modo desarrollo se debe ejecutar el siguiente comando en la raiz del proyecto
+```sh
+$ ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Por defecto el proyecto estara corriendo en el puerto **4200**
 
-## Further help
+### Backend
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+El proyecto cuando con un servicio de backend mock que usaremos como storage, para invocarlo solo se debe ir a la carpeta **backend** e ejecutar la siguiente instruccion:
+
+```sh
+$ node index
+```
+
+Por defaul el server sera ejecutado en el puerto **3000**
