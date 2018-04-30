@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const appRoutes: Routes = [];
+const appRoutes: Routes = [{
+  path: '',
+  loadChildren: './business/auth/auth.module#AuthModule'
+}];
 
 @NgModule({
   imports: [
